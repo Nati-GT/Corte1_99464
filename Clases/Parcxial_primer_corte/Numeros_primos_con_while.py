@@ -1,8 +1,19 @@
-n=int(input("indique la cantidad de numeros primos: "))
-while n<=n:
-    if n/n//10:
+num=int(input("indique la cantidad de numeros primos: "))
+j=2
+n=2
+x=0
+print('1')
+while x<=num-2:
+   div = n%j
+   if div==0:
+        if n==j:
+           print(n, end=',')
+           x=x+1
+        
+        j=2
         n+=1
-        break
-    print(n)
-    n+=1
-print('fin del proceso')
+   else:
+        j+=1
+       
+     
+   
